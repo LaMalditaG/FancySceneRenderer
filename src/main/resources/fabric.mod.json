@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "fancyscenerenderer",
+	"version": "${version}",
+	"name": "fancyscenerenderer",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fancyscenerenderer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.fancyscenerenderer.FancySceneRenderer"
+		],
+		"client": [
+          "com.fancyscenerenderer.FancySceneRendererClient"
+		]
+	},
+	"mixins": [
+      "fancyscenerenderer.mixins.json",
+		{
+			"config": "fancyscenerenderer.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
