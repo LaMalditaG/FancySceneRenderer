@@ -1,0 +1,12 @@
+{
+  "fmsr.elements.scene.set_source": "Set Json",
+  "fmsr.elements.scene.set_rot": "Set Rotation",
+  "fmsr.elements.scene.set_offset": "Set Offset",
+  "fmsr.elements.scene.set_scale": "Set Scale",
+  "fmsr.elements.scene.set_x": "X",
+  "fmsr.elements.scene.set_y": "Y",
+  "fmsr.elements.scene.set_z": "Z",
+  "fmsr.elements.scene.dynamic_rot" : "Dynamic Rotation: %s",
+  "fmsr.elements.scene.dynamic_scale" : "Dynamic Scale: %s",
+  "fmsr.elements.scene.dynamic_offset" : "Dynamic Offset: %s"
+}
