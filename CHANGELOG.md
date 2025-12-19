@@ -1,0 +1,2 @@
+- Fixed mixin crash.
+- Lower loader requirements

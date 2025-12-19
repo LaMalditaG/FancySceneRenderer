@@ -37,13 +37,14 @@ modrinth {
     token = modrinth_token
 //    token = System.getenv("MODRINTH_TOKEN") // Please use an environment variable for this! The default is `$MODRINTH_TOKEN`.
     projectId = "7m3oCWa5" // The ID of your Modrinth project. Slugs will not work.
-    versionNumber = "1.0.0" // The (preferably SemVer) version of the mod. If not specified, it'll use the `version` declaration
+    versionNumber = "${project.mod_version}" // The (preferably SemVer) version of the mod. If not specified, it'll use the `version` declaration
     versionType =  "alpha"
     uploadFile = jar // Tells Minotaur to use the remapped jar
     gameVersions = ['1.20.1'] // An array of game versions the version supports
     dependencies {
         required.project "fancymenu"
     }
+    changelog = rootProject.file("CHANGELOG.md").text
     syncBodyFrom = rootProject.file("README.md").text
 }
 
